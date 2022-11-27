@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SHORT URL</title>
+    <link rel="stylesheet" href="/static/page.css">
+</head>
+
+<body>
+    <div class="container">
+        <H1>URL-SHORTNER</H1>
+        <form action="\set" method="post">
+            <input type="url" required name="url" placeholder="Enter Big URL.........">
+            <button type="submit">SHORT URL</button>
+        </form>
+        <h2 id="given_url">
+            <%= given_url %>
+        </h2>
+        <span class="arrow">&#8595;</span>
+        <div class="url">
+            <!-- <input onmouseover=copy() id="shorted_url" type="text" value=<%=url %>> -->
+            <input id="shorted_url" type="text" value=<%=url %>>
+            <button onclick=copy()>COPY URL</button>
+        </div>
+
+
+
+    </div>
+    <script>
+        const text = document.querySelector("#shorted_url");
+        function copy() {
+            text.select();
+            document.execCommand('copy');
+            alert("text copied");
+        }
+    </script>
+</body>
+
+</html>
