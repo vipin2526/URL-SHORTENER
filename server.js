@@ -18,8 +18,10 @@ app.get('', (req, resp) => {
 
 
 app.post('/set', (req, resp) => {
+   
     arr[index] = req.body.url;
-    const shorted_url = { "url": `${req.rawHeaders[1]}/a${index}`, "given_url": arr[index++] };
+    // const shorted_url = { "url": `${req.rawHeaders[1]}/a${index}`, "given_url": arr[index++] };
+    const shorted_url = { "url": `https://nice-pear-cape-buffalo-vest.cyclic.app/a${index}`, "given_url": arr[index++] };
     resp.render('shorted-url', shorted_url);
 
     console.log([req.body.url, shorted_url.url]);
