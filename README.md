@@ -34,5 +34,5 @@ This is a simple URL shortener application that allows users to create shortened
 
 ### Credits
 
-This project was created by [Vipin Kushwaha]. Feel free to use it and modify it to suit your needs.
+This project was created by [Vipin Kushwaha](https://github.com/xmartcoder). Feel free to use it and modify it to suit your needs.
 
